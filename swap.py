@@ -83,7 +83,7 @@ def approve_if_needed(token_address, decimals):
         print(f"[ERROR] Gagal approve token {token_address}: {e}")
 
 def get_random_amount(decimals):
-    amount = random.uniform(0.01, 0.02)
+    amount = random.uniform(0.001, 0.002)
     return int(amount * (10 ** decimals))
 
 def get_min_out(decimals):
